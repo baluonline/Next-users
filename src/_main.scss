@@ -1,0 +1,21 @@
+@use "./styles/themes";
+@use "./styles/variables" as vars;
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+  font-family: system-ui, sans-serif;
+  margin: 0;
+}
+.bg-primary {
+  margin: auto;
+  height: auto;
+  width: auto;
+  padding:vars.$space*4;
+  background-color: var(--color-blue-500);
+  color: var(--color-white);
+  border-radius: 2px solid
+}

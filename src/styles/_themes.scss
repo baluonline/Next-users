@@ -1,0 +1,25 @@
+/* Default Theme (Light) */
+:root,
+[data-theme="light"] {
+  --background: #ffffff;
+  --text: #1a1a1a;
+  --primary: #0066cc;
+  --card-bg: #f5f5f7;
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+  --background: #121212;
+  --text: #f5f5f7;
+  --primary: #38bdf8;
+  --card-bg: #1e1e1e;
+}
+
+/* Pink Theme */
+[data-theme="pink"] {
+  --background: #fff0f5; /* LavenderBlush */
+  --text: #4a0e2e;
+  --primary: #ec4899; /* Hot Pink */
+  --card-bg: #fce7f3;
+}
+
