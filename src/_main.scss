@@ -19,3 +19,34 @@ body {
   color: var(--color-white);
   border-radius: 2px solid
 }
+
+.theme-toggle-track {
+  display: flex;
+  align-items: center;
+  width: vars.$space * 14;
+  height: vars.$space * 8;
+  padding: vars.$space;
+  background-color: vars.$light-gray;
+  border-radius: 9999px;
+  transition: background-color 300ms ease-in-out;
+
+  &::after {
+    content: "";
+    width: vars.$space * 6;
+    height: vars.$space * 6;
+    background-color: var(--color-white);
+    border-radius: 50%;
+    box-shadow:
+      0 4px 6px -1px var(--color-black),
+      0 2px 4px -2px var(--color-black);
+    transition: transform 300ms ease-in-out;
+  }
+}
+
+.theme-toggle-input:checked + .theme-toggle-track {
+  background-color: vars.$light-green;
+
+  &::after {
+    transform: translateX(vars.$space * 6);
+  }
+}

@@ -16,5 +16,10 @@ export default function LazyUsersList({
 }: {
   usersPromise: Promise<User[]>;
 }) {
-  return <UsersList usersPromise={usersPromise} />;
+  return 
+  (
+   
+  <UsersList usersPromise={usersPromise} />
+  
+  )
 }

@@ -18,6 +18,7 @@
     "prisma": "^7.10.0",
     "react": "19.2.8",
     "react-dom": "19.2.8",
+    "react-router-dom": "^7.18.4",
     "swr": "^2.5.1",
     "zustand": "^5.0.15"
   },

@@ -33,6 +33,7 @@ interface UsersState {
   postsByUserId: Record<number, Post[]>;
   isLoading: boolean;
   error: string | null;
+  imageUrls: string[];
   fetchUsers: () => Promise<void>;
   createUser: (name: string, email: string, City: string) => Promise<void>;
   updateUser: (
@@ -58,6 +59,10 @@ const useUsersStore = create<UsersState>()(
     postsByUserId: {},
     isLoading: false,
     error: null,
+    imageUrls:[ "https://randomimageurl.com/assets/images/local/20260103_0518_Bold%20Abstract%20Composition_simple_compose_01ke204yvyf6pbx3ksw2cjcgkw_compressed_q80.jpeg",
+        "https://images.unsplash.com/photo-1789677802125-ca4e0f676e05?ixid=M3w4MjcwNjd8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTE4MjM5OTh8&ixlib=rb-4.1.0&fit=max&q=80&auto=format",
+        "https://images.unsplash.com/photo-1791149634999-4ea6eb1c4c5a?ixid=M3w4MjcwNjd8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTE4MjM5OTh8&ixlib=rb-4.1.0&fit=max&q=80&auto=format",
+    ],
     fetchUsers: async () => {
       set({ isLoading: true, error: null });
 

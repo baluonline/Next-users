@@ -1,6 +1,4 @@
-import Link from "next/link";
 import { CarouseleComponent } from "./ui/carousele-component";
-
 
 export default function Home() {
  
